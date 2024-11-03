@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import { useTicketContext } from './TicketProvider';
 import { Ticket } from '@acme/shared-models';
 import { CheckIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { useTicketContext } from './TicketProvider';
 
 const EditingTicketForm = ({ ticket }: { ticket: Ticket }) => {
   const { updateTicket, setEditingTicket, users, editingTicket } =

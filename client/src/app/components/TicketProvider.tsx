@@ -60,6 +60,7 @@ export function TicketProvider({ children }: PropsWithChildren) {
     }
   }, []);
 
+  // Fetch all users and tickets
   useEffect(() => {
     fetchData();
   }, [fetchData]);
@@ -109,6 +110,7 @@ export function TicketProvider({ children }: PropsWithChildren) {
     }
   };
 
+  // Update tickets when filter changed
   useEffect(() => {
     if (statusQuery === 'all') {
       searchParams.delete(QUERY_STATUS_PARAM);

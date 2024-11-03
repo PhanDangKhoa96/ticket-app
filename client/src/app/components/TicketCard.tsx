@@ -33,7 +33,6 @@ const TicketCard = ({
           <button
             aria-label="Edit ticket"
             onClick={() => {
-              console.log('click');
               setEditingTicket(ticket);
             }}
             className="p-1 shrink-0 text-blue-500 hover:bg-blue-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"

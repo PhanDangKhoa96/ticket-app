@@ -1,23 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import { useTicketContext } from './TicketProvider';
-import { CheckIcon, PencilIcon, XMarkIcon } from '@heroicons/react/20/solid';
-import { getUserName } from '../utilities';
-import { QUERY_TASK_PARAM } from '../constants';
+import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import TicketDetail from './TicketDetail';
+import { QUERY_TASK_PARAM } from '../constants';
 import EditingTicketForm from './EditingTicketForm';
 import TicketCard from './TicketCard';
+import TicketDetail from './TicketDetail';
+import { useTicketContext } from './TicketProvider';
 
 const TicketListing = () => {
   const {
     isLoading,
     filteredTickets,
     editingTicket,
-    setEditingTicket,
     users,
-    updateTicket,
   } = useTicketContext();
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const [openDrawer, setOpenDrawer] = useState(false);
 
   useEffect(() => {
