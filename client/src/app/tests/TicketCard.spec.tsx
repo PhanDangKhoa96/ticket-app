@@ -1,8 +1,8 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { QUERY_TASK_PARAM } from '../constants';
-import TicketCard from './TicketCard';
-import { TicketProvider } from './TicketProvider';
+import TicketCard from '../components/TicketCard';
+import { TicketProvider } from '../components/TicketProvider';
 
 // Mock the getUserName function
 jest.mock('../utilities', () => ({

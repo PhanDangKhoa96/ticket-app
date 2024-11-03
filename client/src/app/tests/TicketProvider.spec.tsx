@@ -1,7 +1,7 @@
 import React from 'react';
 import { act, render, screen, waitFor } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
-import { TicketProvider, useTicketContext } from './TicketProvider';
+import { TicketProvider, useTicketContext } from '../components/TicketProvider';
 import * as api from '../services/api';
 import { Ticket, User } from '@acme/shared-models';
 import userEvent from '@testing-library/user-event';
