@@ -14,7 +14,7 @@
     "**/*.spec.ts",
     "**/*.spec.tsx",
     "**/*.d.ts"
-  ],
+, "src/app/components/TicketProvider.spec.tsx", "src/app/components/TicketCard.spec.tsx"  ],
   "files": [
     "../node_modules/@nrwl/react/typings/cssmodule.d.ts",
     "../node_modules/@nrwl/react/typings/image.d.ts"

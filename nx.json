@@ -54,6 +54,10 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "build": {
+      "executor": "@nrwl/web:webpack",
+      "options": {
+        "postcssConfig": "./postcss.config.js"
+      },
       "dependsOn": [
         "^build"
       ],
